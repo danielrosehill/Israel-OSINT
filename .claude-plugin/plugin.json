@@ -1,0 +1,9 @@
+{
+  "name": "israel-osint",
+  "version": "0.1.0",
+  "description": "Israel open-source intelligence on organisations and public records. First skill: company-lookup (Companies Registrar, amutot, strike-off and charge notices).",
+  "author": {"name": "Daniel Rosehill", "url": "https://github.com/danielrosehill"},
+  "repository": "https://github.com/danielrosehill/Israel-OSINT",
+  "license": "MIT",
+  "keywords": ["israel", "osint", "company-research", "due-diligence", "registrar", "amuta", "public-records"]
+}
