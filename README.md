@@ -6,13 +6,16 @@ Open-source intelligence on Israeli organisations and public records: establish 
 
 - `company-lookup`: Companies Registrar, amutot, strike-off and registered-charge data via the open datasets on data.gov.il; statuses, the breach flag, stale-filing signals, entity types and where each type is registered. Script: `skills/company-lookup/scripts/lookup.py` (`uv run`).
 
+- `jerusalem-building-file-lookup`: Jerusalem building permits, building-violation files, pre-permit requests and conservation opinions per gush/helka from the municipality's GIS info hub (metadata only; documents need FOI or in-person inspection). Pairs with `israel-foi`.
+
 ## Backlog (not built)
 
-Likely next skills, in rough order: amuta financial profile (turnover, staff, funders from GuideStar and the amutot dataset); gazette (Reshumot) notice search; insolvency docket check; NBCTF sanctions screening; listed-company disclosures (Maya/TASE); public procurement and tender records; land-registry and planning records; court decisions search.
+Likely next skills, in rough order: amuta financial profile (turnover, staff, funders from GuideStar and the amutot dataset); gazette (Reshumot) notice search; insolvency docket check; NBCTF sanctions screening; listed-company disclosures (Maya/TASE); public procurement and tender records; land-registry records (Tabu); planning records for cities other than Jerusalem; court decisions search.
 
 ## Complementary plugins
 
 - `research-space` (osint and deep-research variants) and `legal-investigative` (OSINT investigation workspace, evidence logging, redaction): use them to run and document an investigation; this plugin supplies the Israel-specific sources.
+- `israel-foi` ([Israel-FOI-Plugin](https://github.com/danielrosehill/Israel-FOI-Plugin)): when the record you need isn't public, file an FOI request with the authority that holds it.
 - `digital-evidence`: hashing and timestamping captured records.
 - `israel-open-data` ([Israel-Open-Data-Plugin](https://github.com/danielrosehill/Israel-Open-Data-Plugin)): general data.gov.il querying and quirks; this plugin's datasets are served by the same portal.
 

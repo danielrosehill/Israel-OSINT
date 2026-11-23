@@ -41,7 +41,8 @@ Company record fields worth reading: `מספר חברה` (number), `שם חבר�
 
 - Companies (prefix 51-, 9 digits): `ica_companies`, above. Company number is not the tax ID (mispar osek).
 - Amutot (58-) and public-benefit companies (CHL"Tz, in the companies data with a "(חל~צ)" suffix): amutot dataset above and GuideStar https://www.guidestar.org.il (free extracts). Amutot records carry financial turnover, staff and volunteers.
-- Partnerships (55-): not in the companies dataset; https://ica.justice.gov.il/Request/OpenRequest?rt=PartnershipExtract.
+- Partnerships (55-): not in the companies dataset, but the registrar publishes a **separate partnerships dataset** on data.gov.il, resource `139aa193-fabb-4f6b-a71b-0bb40fd73eb2` ("מאגר שותפויות - רשם החברות"; fields: מספר שותפות, שם, status, city/street/house/postcode, **אצל** care-of). Query it with the same `datastore_search` call (`q=<number or name>`). Verified 2026-11-23 on a limited partnership (55…): active, registered office plus care-of line. Paid official extract: https://ica.justice.gov.il/Request/OpenRequest?rt=PartnershipExtract.
+- **Registered office for formal letters:** use the registry's address fields *and* the `אצל` (care-of) line, not a directory or marketing address. A business directory can find the number, but confirm the address in the registry.
 - Cooperatives (57-): own registry.
 - Sole traders (osek patur/morsheh): Tax Authority VAT registration, not a registrar entity.
 - See `references/entity-types.md` for the full table, prefixes and fees.
