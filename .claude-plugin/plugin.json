@@ -1,6 +1,6 @@
 {
   "name": "israel-osint",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Israel open-source intelligence on organisations and public records: registry, court cases, media coverage, public filings, parcels and Jerusalem building permits, combined into one dossier.",
   "author": {
     "name": "Daniel Rosehill",
