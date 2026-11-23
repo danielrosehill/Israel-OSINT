@@ -1,7 +1,7 @@
 {
   "name": "israel-osint",
-  "version": "0.2.0",
-  "description": "Israel open-source intelligence on organisations and public records: company/amuta/partnership registry lookups, and Jerusalem building permits and violations per parcel.",
+  "version": "0.3.0",
+  "description": "Israel open-source intelligence on organisations and public records: company/amuta/partnership registry lookups, address↔gush/helka parcel lookup (CLI), Jerusalem building permits and violations per parcel.",
   "author": {
     "name": "Daniel Rosehill",
     "url": "https://github.com/danielrosehill"
@@ -19,6 +19,10 @@
     "building-permits",
     "planning",
     "jerusalem",
-    "partnerships"
+    "partnerships",
+    "cadastre",
+    "gush-helka",
+    "parcel",
+    "geocoding"
   ]
 }

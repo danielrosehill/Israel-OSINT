@@ -48,10 +48,9 @@ date. Report it as such, don't interpret it.
 
 ## Getting gush/helka from an address
 
-Use the municipal ArcGIS parcels layer (public, ITM / EPSG:2039):
-`https://services3.arcgis.com/jeqc1A7OfE9m4EPO/arcgis/rest/services/helkot1225/FeatureServer/0/query`
-(fields `GUSH_NO`, `PARCEL_NO`). Query by geometry from a geocoded point, or ask the user
-for gush/helka from a contract or tax bill (ארנונה).
+Use `parcel-lookup` (`uv run .../parcel.py "<address>"`). It falls back to the Jerusalem
+municipal layer for central blocks the national cadastre lacks, and lists neighbouring parcels
+because geocoding is approximate.
 
 ## Recipe
 

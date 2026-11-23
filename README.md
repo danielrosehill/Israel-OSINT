@@ -6,11 +6,12 @@ Open-source intelligence on Israeli organisations and public records: establish 
 
 - `company-lookup`: Companies Registrar, amutot, strike-off and registered-charge data via the open datasets on data.gov.il; statuses, the breach flag, stale-filing signals, entity types and where each type is registered. Script: `skills/company-lookup/scripts/lookup.py` (`uv run`).
 
+- `parcel-lookup`: address or lat/lon → gush/helka with neighbouring parcels, and gush/helka → location, outline, status, legal area. CLI `skills/parcel-lookup/scripts/parcel.py` (`uv run`, no key). National cadastre layer plus the Jerusalem municipal layer.
 - `jerusalem-building-file-lookup`: Jerusalem building permits, building-violation files, pre-permit requests and conservation opinions per gush/helka from the municipality's GIS info hub (metadata only; documents need FOI or in-person inspection). Pairs with `israel-foi`.
 
 ## Backlog (not built)
 
-Likely next skills, in rough order: amuta financial profile (turnover, staff, funders from GuideStar and the amutot dataset); gazette (Reshumot) notice search; insolvency docket check; NBCTF sanctions screening; listed-company disclosures (Maya/TASE); public procurement and tender records; land-registry records (Tabu); planning records for cities other than Jerusalem; court decisions search.
+Likely next skills, in rough order: amuta financial profile (turnover, staff, funders from GuideStar and the amutot dataset); gazette (Reshumot) notice search; insolvency docket check; NBCTF sanctions screening; listed-company disclosures (Maya/TASE); public procurement and tender records; Tabu extract ordering (18 ₪, official site; reading is in `rtl-skills:read-israeli-forms`); planning records for cities other than Jerusalem; court decisions search.
 
 ## Complementary plugins
 
